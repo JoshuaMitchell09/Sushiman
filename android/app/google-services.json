@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "398985903968",
+    "project_id": "iiic2026lunes-2da9d",
+    "storage_bucket": "iiic2026lunes-2da9d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398985903968:android:8706df963f424b1e222805",
+        "android_client_info": {
+          "package_name": "com.mycompany.sushiman"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJK1sp9KrWeOkCh7thXXTdMdhNAZsoQeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
