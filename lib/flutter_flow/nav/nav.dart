@@ -54,6 +54,28 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: ProductDetailWidget.routeName,
           path: ProductDetailWidget.routePath,
           builder: (context, params) => ProductDetailWidget(),
+        ),
+        FFRoute(
+          name: LoginWidget.routeName,
+          path: LoginWidget.routePath,
+          builder: (context, params) => LoginWidget(),
+        ),
+        FFRoute(
+          name: ListarUsuarioDinamicoWidget.routeName,
+          path: ListarUsuarioDinamicoWidget.routePath,
+          builder: (context, params) => ListarUsuarioDinamicoWidget(),
+        ),
+        FFRoute(
+          name: CrearUsuarioWidget.routeName,
+          path: CrearUsuarioWidget.routePath,
+          builder: (context, params) => CrearUsuarioWidget(),
+        ),
+        FFRoute(
+          name: EditarUsuarioDinamicoWidget.routeName,
+          path: EditarUsuarioDinamicoWidget.routePath,
+          builder: (context, params) => EditarUsuarioDinamicoWidget(
+            userId: params.getParam('userId', ParamType.String),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
