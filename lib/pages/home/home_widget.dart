@@ -1,3 +1,5 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import '/index.dart';
 import '/components/category_chip/category_chip_widget.dart';
 import '/components/product_card/product_card_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
@@ -92,7 +94,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                                     size: 28.0,
                                   ),
                                   onPressed: () {
-                                    print('IconButton pressed ...');
+                                    // Administración de usuarios
+                                    context.pushNamed(
+                                        FirebaseAuth.instance.currentUser ==
+                                                null
+                                            ? LoginWidget.routeName
+                                            : ListarUsuarioDinamicoWidget
+                                                .routeName);
                                   },
                                 ),
                                 Row(
